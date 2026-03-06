@@ -23,6 +23,7 @@ The domain uses a dual-stack configuration (IPv4 and IPv6) and is distributed vi
 > **Command:** `nslookup doemin04.github.io`
 
 ![DNS Resolution Output](nslookup.png)
+
 *The output above confirms our domain resolves to multiple GitHub load-balancing IPs.*
 
 ### 2. Protocol & Security Headers
@@ -30,6 +31,7 @@ The application strictly communicates over TCP/IP using encrypted HTTPS.
 > **Method:** Browser Developer Tools -> Network Tab -> Headers
 
 ![HTTPS and Status Code Evidence](devtools.png)
+
 *The inspection above verifies the `200 OK` status code and the presence of the `Strict-Transport-Security` header.*
 
 ---
